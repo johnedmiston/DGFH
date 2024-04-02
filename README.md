@@ -7,7 +7,7 @@ It is an honor to know both of you and to have you working on this project!
 Alex will do the coding, Olivia will do web design and copywriting. Emails are below.
 
 ************************************** (censored)
-**************************************
+************************************** (censored)
 
 The project is a complete redesign of https://downloadinggrace.com
 
@@ -31,7 +31,7 @@ Blessings,
 
 John
 
-----End Email----
+***********************************************
 
 ----Alex's 2 cents----
 Olivia will be doing the content, and because of Olivia's workload, I will be doing the design work and the coding. I have a project for school I have as well, 16-19 pages long.
