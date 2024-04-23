@@ -47,24 +47,15 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-	.samurai {display: block;}
 }
 body{
-	margin:auto;
+    padding:0px;
+    margin:0px;
     font-family:"Georgia",serif;
     font-size:1.2em;
     background-color:rgba(27,91,126,1.00);
 }
-header{
-    position:relative;
-	width:100%;
-	height:1080px;
-}
-.d-header{
-    position:relative;
-    display:none;
-    height:2680px;
-}
+
 img{
     width:100%;
     height:auto;
@@ -83,6 +74,11 @@ p{
     color:rgba(255,255,255,1.00);
     text-shadow: 0px 0px 5px rgba(0,0,0,1.00);
 }
+.d-header{
+    position:relative;
+    display:none;
+    height:2680px;
+}
 .aboveband{
     height:100px;
 }
@@ -90,33 +86,20 @@ p{
     position:absolute;
     top:0px;
     width:100%;
-	text-align:right;
+	text-align:center;
 	z-index: 200;
 }
 .d-logo{
     width:100px;
 	height:100px;
-	background-color:rgba(255,0,4,1.00);
+	background-color:rgba(255,0,0,1.00);
 }
-.core-nav{
-}
-.menu-item{
-    float:right;
-    width:290px;
-    margin:0px 10px;
-    text-align: center;
-    color:rgba(255,242,153,1.00);
-    background-color:rgba(27,91,126,0.60);
-    text-shadow: 3px 3px 10px rgba(0,0,0,1.00);
-    border-radius:10px;
-    box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
-}
-.menu-item:hover{
-    background-color:rgba(255,242,153,0.40);
-    color:rgba(50,50,255,1.00);
-    box-shadow: 0px 0px 15px 0px rgba(255,242,153,1.00);
-}
-.above-ht{
+.header-t-row{
+    position:absolute;
+    top:200px;
+    left:0px;
+    display:block;
+    z-index:3000px;
     height:20px;
 }
 .header-t-row{
@@ -133,139 +116,118 @@ p{
 }
 .book{
     height:500px;
-    background-color:rgba(255,0,4,1.00);
+    background-color:rgba(255,0,0,1.00);
 }
 .booktext p{
     text-align:left;
 }
 /*mobile navigation*/
+.logo{
+    position:relative;
+    float:left;
+    display:block;
+    width:100px;
+    height:100px;
+    background-color:red;
+}
+.icon{
+    float:right;
+    width:100px;
+    height:100px;
+    background-color:red;  
+}
+.image-jumbo{
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
 .m-header{
     position: relative;
     width: 100%;
     background-color:rgba(160,221,136,0.60);
-    padding:20px;
-}
-/* Logo */
-.logo{
-    width:100px;
-    height:100px;
-	display: inline-block;
-    background-color:rgba(255,0,4,1.00);
-	margin:10px;
-}
+    padding:0px;
+} 
 /* Nav menu */
 .nav{
     display:none;
 }
-.m-item{
-    margin:10px;
-    height:auto;
-    background-color:rgba(255,255,255,1.00);
-    padding:10px;
-    
-}
-.m-item a{
-    text-decoration:none;
-}
-.m-item h1{
-    display: block;
-    padding: 30px;
-    color: rgba(0,0,0,1.00);
-	margin:20px 20px;
-    text-align:center;
-	text-decoration:none;
-}
-.sub-menu{
-    display:none;
-    margin:10px;
-}
-.sub-menu a{
-    font-size:1.2em;
-    padding: 30px;
-    background-color: rgba(198,234,183,1.00);
-	margin:20px 20px;
-    color:rgba(0,0,0,1.00);
-    text-align:center;
-	text-decoration:none;
-}
-.m-header{
-    position: relative;
-    width: 100%;
-    background-color:rgba(160,221,136,0.60);
-    padding:20px;
-    height:3060px;
-}
 .tab{
     display: none;
 }
-.desk{
-    display:none;
-}
+
 /* Style the navigation menu */
 .topnav {
-    background-color: rgba(51,51,51,1.00);
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:10px;
+    width:97%;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
-  display: none;
+    display: none;
+    position:absolute;
+    top:100px;
+    right:0px;
+    z-index: 300;
+    width:100%;    
 }
-
+.menu-item{
+    float: right;
+    margin:0px 10px;
+    width:400px;
+    padding:10px;
+    border-radius:10px;
+    background-color:rgba(27,91,126,0.60);
+    box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
+    
+}
+.menu-item:hover{
+    background-color:rgba(255,242,153,1.00);
+    box-shadow:0px 0px 10px 10px rgba(255,242,153,1.00);
+    
+}
+.menu-item a:hover{
+    color:rgba(0,26,255,1.00);
+}
 /* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
+.topnav #myLinks a {
+    margin:20px;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
 }
-.topnav a h3{
+.topnav #myLinks a h3{
     margin:0px;
 }
 /* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+.topnav #myLinks a{
+    background-color:rgba(27,91,126,0.60);
+    color:rgba(255,255,255,1.00);
+    box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
 }
-
 /* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.topnav .mylinks a:hover {
+    background-color: #ddd;
+    color: black;
 }
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #04AA6D;
-  color: white;
-} /* Style span tag */
-.m-jumbo{
-    position: relative;
-}
-.m-jumbo img{
-    clear:both;
-    width:100%;
-    height:auto;
-}
-.m-jumbo-text{
-    position:absolute;
-    top:100px;
-    left:50px;
-    padding:10px;
-    color: rgba(255,255,255,1.00);
-    background-color:rgba(160,221,136,0.60);
+.phone{
+    display:none;
 }
 @media only screen and (min-width:720px){
     .d-header{
         display:block;
         height:2000px;
     }
+    .phone{
+        display:block;
+    }
     .menu-item{
-        font-size:0.8em;
-        width:200px;
+        font-size:1.1em;
+        width:220px;
     }
     .d-logo{
         display:block;
@@ -273,30 +235,41 @@ p{
     .m-header{
         display:none;
     }
-    .m-jumbo{
-        display:none;
-    }
-    .tab{
-        display:block;
-    }
-    
 }
 @media only screen and (min-width:870px){
-   
+   .tab{
+        display:block;
+    }
+    .phone{
+        display:none;
+    }
     .menu-item{
-        font-size:1.2em;
-        width:280px;
+        font-size:1.3em;
+        width:250px;
     }
 }
 @media only screen and (min-width:1200px){
     .tab{
+        display:block;
+    }
+    .phone{
         display:none;
     }
-    .desk{
-        display:block;
+    .menu-item{
+        font-size:2.0em;
+        width:400px;
     }
 }
 /*end navigation*/
+.about-john{
+    padding:30px;
+}
+.main{
+   position:absolute;
+    top:00px;
+    left:0px;
+    width:100%;
+}
 .yellow{
     background-color:rgba(255,242,153,1.00);
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
@@ -308,32 +281,81 @@ p{
 .john-pic{
     margin:auto;
     text-align:center;
-    width:700px;
+    width:100%;
     height:700px;
     background-color:rgba(255,0,4,1.00);
 }
 .blue-overlap{
     position:absolute;
-    top:1100px;
+    top:1250px;
     left:0px;
     width:100%;
-    height:3000px;
+    height:1400px;
     z-index: 1000px;
     background: rgb(27,91,126);
-    background: linear-gradient(0deg, rgba(27,91,126,1) 90%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgba(27,91,126,1) 97%, rgba(0,0,0,0) 100%);
+}
+.social{
+    text-align:center;
+}
+.button{
+    padding:10px;
+    text-align:center;
+    background-color:rgba(95,173,216,1.00);
+    box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
+}
+.button:hover{
+    background-color:rgba(255,242,153,1.00);
+    box-shadow:0px 0px 10px 10px rgba(255,242,153,1.00);
+    color:rgba(0,26,255,1.00);
+}
+
+@media only screen and (min-width:400px){
+    .blue-overlap{
+        top:1400px;
+    }
+    .main{
+        top:00px;
+    }
+}
+@media only screen and (min-width:620px){
+    .blue-overlap{
+        top:1300px;
+    }
+    .main{
+        top:00px;
+    }
+}
+@media only screen and (min-width:720px){
+     .john-pic{
+        width:100%;
+        height:600px;
+    }
+    .blue-overlap{
+        top:1400px;
+    }
+    .main{
+        top:00px;
+    }
 }
 @media only screen and (min-width:870px){
     .blue-overlap{
-        top:1000px;
+        top:1270px;
     }
-    
+    .main{
+        top:00px;
+    }
 }
 @media only screen and (min-width:1200px){
+    .main{
+        top:100px;
+    }
     .blue-overlap{
-        top:650px;
+        top:900px;
+        height:1200px;
     }
     .john-pic{
-        width:300px;
-        height:300px;
+        width:275px;
+        height:275px;
     }
 }
