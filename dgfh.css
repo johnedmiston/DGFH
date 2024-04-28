@@ -66,7 +66,7 @@ a{
 }
 h1{
     text-align:center;
-    color:rgba(255,242,153,1.00);
+    color:rgba(255,203,0,1.00);
     text-shadow: 3px 3px 10px rgba(0,0,0,1.00);
 }
 p{
@@ -80,7 +80,10 @@ p{
     height:2680px;
 }
 .aboveband{
-    height:100px;
+    height:110px;
+}
+.margindiv{
+    margin:20px 10px;
 }
 .main-nav{
     position:absolute;
@@ -124,11 +127,12 @@ p{
 /*mobile navigation*/
 .logo{
     position:relative;
-    float:left;
-    display:block;
-    width:100px;
+    width:75%;
     height:100px;
-    background-color:red;
+}
+.logo-m{
+    float:left;
+    width:75%
 }
 .icon{
     float:right;
@@ -177,18 +181,24 @@ p{
     width:100%;    
 }
 .menu-item{
-    float: right;
+    float:left;
+    width:45%;
     margin:0px 10px;
-    width:400px;
     padding:10px;
+    font-size:0.90em;
     border-radius:10px;
     background-color:rgba(27,91,126,0.60);
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
     
 }
+.menu-item a{
+    display:block;
+    height:100%;
+}
+
 .menu-item:hover{
-    background-color:rgba(255,242,153,1.00);
-    box-shadow:0px 0px 10px 10px rgba(255,242,153,1.00);
+    background-color:rgba(255,203,0,1.00);
+    box-shadow:0px 0px 10px 10px rgba(255,203,0,1.00);
     
 }
 .menu-item a:hover{
@@ -229,8 +239,8 @@ p{
         display:block;
     }
     .menu-item{
-        font-size:1.1em;
-        width:220px;
+        font-size:1.0em;
+        width:45%;
     }
     .d-logo{
         display:block;
@@ -248,7 +258,7 @@ p{
     }
     .menu-item{
         font-size:1.3em;
-        width:250px;
+        width:46%;
     }
 }
 @media only screen and (min-width:1200px){
@@ -262,8 +272,8 @@ p{
         display:block;
     }
     .menu-item{
-        font-size:2.0em;
-        width:400px;
+        font-size:1.6em;
+        width:47%;
     }
 }
 /*end navigation*/
@@ -277,7 +287,7 @@ p{
     width:100%;
 }
 .yellow{
-    background-color:rgba(255,242,153,1.00);
+    background-color:rgba(255,203,0,1.00);
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
     
 }
@@ -311,14 +321,14 @@ p{
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
 }
 .button:hover{
-    background-color:rgba(255,242,153,1.00);
-    box-shadow:0px 0px 10px 10px rgba(255,242,153,1.00);
+    background-color:rgba(255,203,0,1.00);
+    box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
     color:rgba(0,26,255,1.00);
 }
 
 @media only screen and (min-width:460px){
     .blue-overlap{
-        top:1400px;
+        top:1500px;
     }
     .main{
         top:00px;
@@ -326,7 +336,7 @@ p{
 }
 @media only screen and (min-width:620px){
     .blue-overlap{
-        top:1300px;
+        top:1500px;
     }
     .main{
         top:00px;
@@ -338,7 +348,7 @@ p{
         height:600px;
     }
     .blue-overlap{
-        top:1400px;
+        top:1550px;
     }
     .main{
         top:00px;
@@ -346,7 +356,7 @@ p{
 }
 @media only screen and (min-width:870px){
     .blue-overlap{
-        top:1270px;
+        top:1500px;
     }
     .main{
         top:00px;
@@ -357,11 +367,53 @@ p{
         top:100px;
     }
     .blue-overlap{
-        top:900px;
-        height:1200px;
+        top:1000px;
+        height:900px;
     }
     .john-pic{
         width:275px;
         height:275px;
+    }
+}
+.footer{
+    position:absolute;
+    top:1000px;
+    left:0px;
+    width:100%;
+    text-align:center;
+    height:200px;
+    z-index: 1000px;
+}
+.padding{
+    padding:20px 20px;
+}
+.padding p{
+    color:rgba(0,0,0,1.00);
+}
+@media only screen and (min-width:460px){
+    .footer{
+        top:1800px;
+        height:300px;
+    }
+}
+@media only screen and (min-width:620px){
+    .footer{
+        top:1600px;
+    }
+}
+@media only screen and (min-width:720px){
+    .footer{
+        top:1500px;
+        height:200px;
+    }
+}
+@media only screen and (min-width:870px){
+    .footer{
+        top:1500px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .footer{
+        top:1000px;
     }
 }
