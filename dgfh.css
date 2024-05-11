@@ -80,7 +80,7 @@ p{
     height:2680px;
 }
 .aboveband{
-    height:110px;
+    height:90px;
 }
 .margindiv{
     margin:20px 10px;
@@ -126,9 +126,8 @@ p{
 }
 /*mobile navigation*/
 .logo{
-    position:relative;
-    width:75%;
-    height:100px;
+    width:100%;
+    font-size:3.0em;
 }
 .logo-m{
     float:left;
@@ -154,6 +153,9 @@ p{
 /* Nav menu */
 .nav{
     display:none;
+}
+.core-nav{
+    margin:0px 0px 40px 0px;
 }
 .tab{
     display: none;
@@ -316,6 +318,7 @@ p{
 }
 .button{
     padding:10px;
+    height:100px;
     text-align:center;
     background-color:rgba(95,173,216,1.00);
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
@@ -323,6 +326,14 @@ p{
 .button:hover{
     background-color:rgba(255,203,0,1.00);
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
+    color:rgba(0,26,255,1.00);
+}
+.button a h3{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.button a h3:hover{
     color:rgba(0,26,255,1.00);
 }
 
@@ -337,6 +348,7 @@ p{
 @media only screen and (min-width:620px){
     .blue-overlap{
         top:1500px;
+        height:1000px;
     }
     .main{
         top:00px;
@@ -349,6 +361,7 @@ p{
     }
     .blue-overlap{
         top:1550px;
+        height:1000px;
     }
     .main{
         top:00px;
@@ -356,7 +369,16 @@ p{
 }
 @media only screen and (min-width:870px){
     .blue-overlap{
-        top:1500px;
+        top:1800px;
+        height:1000px;
+    }
+    .main{
+        top:00px;
+    }
+}
+@media only screen and (min-width:1050px){
+    .blue-overlap{
+        top:1900px;
     }
     .main{
         top:00px;
@@ -392,24 +414,24 @@ p{
 }
 @media only screen and (min-width:460px){
     .footer{
-        top:1800px;
+        top:1100px;
         height:300px;
     }
 }
 @media only screen and (min-width:620px){
     .footer{
-        top:1600px;
+        top:900px;
     }
 }
 @media only screen and (min-width:720px){
     .footer{
-        top:1500px;
+        top:900px;
         height:200px;
     }
 }
 @media only screen and (min-width:870px){
     .footer{
-        top:1500px;
+        top:900px;
     }
 }
 @media only screen and (min-width:1200px){
