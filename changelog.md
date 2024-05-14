@@ -38,9 +38,20 @@ Check-02:
 	"docs" commit:
 		-Alex will structure commits based on https://dev.to/phukon/how-i-write-commits-like-a-pro-340l?ref=dailydev from now on
 		-with new commit structure comes the release of changelog.md, with additional commit (docs) reflecting the commit structure change
-	
 Check-03:
-	fix logo size
-	fix button responsiveness
-	fix john's picture
+	-fix buttons
+	-fix logo
+	-john not showing up
+
+	missed:
+		-fix mobile logo to not overlap
+		-mylinks display none again
+		-header-t-row top:50px again
+		-fixed responsive formatting to reflect changes
+		-fixed photos to work better with new responsiveness changes
+		-fixed responsiveness for super HD displays
+		-fixed hamb to move the jumbotron out of the way
+		-fixed mobile nav formatting to reflect changes
+
+	
 
