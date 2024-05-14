@@ -39,5 +39,8 @@ Check-02:
 		-Alex will structure commits based on https://dev.to/phukon/how-i-write-commits-like-a-pro-340l?ref=dailydev from now on
 		-with new commit structure comes the release of changelog.md, with additional commit (docs) reflecting the commit structure change
 	
-	
+Check-03:
+	fix logo size
+	fix button responsiveness
+	fix john's picture
 
