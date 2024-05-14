@@ -5,6 +5,7 @@
     <title>DGFH - Home</title>
     <link href="dgfh.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -13,6 +14,7 @@
             <img class="desk" src="images/mountains-desk.jpg" width="1926" height="1728" alt="Mountains"/>
             <img class="tab" src="images/mountains-tab.jpg" width="1229" height="2426" alt="Mountains"/>
             <img class="phone" src="images/mountains-phone.jpg" width="870" height="3060" alt="Mountains"/>
+            <img class="small" src="images/mountains-small-phone.jpg" width="578" height="2664" alt="Mountains"/>
         </div>
 		<div class="row main-nav">
             <div class="row band">
@@ -24,12 +26,12 @@
                         
                         <div class="menu-item">
                             <a href="contact.html">
-                               Contact The Author
+                               <h3>Contact The Author</h3>
                             </a>
                         </div>
                         <div class="menu-item">
                             <a href="contact.html">
-                               About The Author
+                               <h3>About The Author</h3>
                             </a>
                         </div>
                     </div>
@@ -41,25 +43,26 @@
                 <img src="images/mountains-phone.jpg" width="720" height="1080" alt=""/>
             </div>
             <!-- Top Navigation Menu -->
-            <div class="topnav">
+            <div class="row topnav">
                 <div class="logo-m">
                     <a href="index.html">
-                        <img src="SVG/logo.svg" alt=""/>
+                        <h1 class="logo">Downloading Grace From Heaven</h1>
                     </a>
                 </div>
-                <div class="icon"  onclick="myFunction()">
-
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <div class="hamb" onclick="hamb()">
+                    <img src="SVG/hamb.svg" alt="hamburger menu"/>
                 </div>
                 <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
-                    <a href="about.html">About The Author</a>
-                    <a href="contact.html">Contact The Author</a>
+                <div class="m-nav"  id="myLinks" >
+                    <a class="m-item" href="about.html">About The Author</a>
+                    <a class="m-item" href="contact.html">Contact The Author</a>
                 </div>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                
             </div>
         </div>
         <div class="above-ht"></div>
-            <div class="row header-t-row">
+            <div id="header" class="row header-t-row">
                 <div class="col-m-2 col-2"></div>
                 <div class="col-m-8 col-8 header-text">
                     <div class="col-m-12 col-6">
@@ -88,24 +91,15 @@
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. </p>
                         </div>
                         <div class="col-m-12 col-5 yellow">
-                            <div></div>
-                            <h1>John Edmiston</h1>
+                          <img src="images/johned_academic.png" width="500" height="455" alt=""/>
+                          <h1>John Edmiston</h1>
                         </div>
                     </div>
-                    <div class="row bstudy-deal">
-                        <div class="col-m-1 col-1"></div>
-                        <div class="col-m-10 col-10">
-                            <h1>Discount for Bible-Studies</h1>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
-                            <div class="button">
-                                <a href="contact.html">
-                                    <h3>Contact the Author</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-m-1 col-1"></div>
+                    <div class="row biblestudy">
+                        <h1>Bible Study Groups Discount</h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. </p>
                     </div>
-                </div>
+</div>
                 <div class="col-m-0 col-2"></div>
             </div>
             <div class="row footer yellow">
@@ -121,14 +115,17 @@
         </div>
     <script>
     /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-    function myFunction() {
+    function hamb() {
         var x = document.getElementById("myLinks");
+        var y = document.getElementById("header");
         if (x.style.display === "block") {
             x.style.display = "none";
+            y.style.top = "50px";
         } else {
             x.style.display = "block";
+            y.style.top = "200px";
         }
     }
-    </script>
+    </script>t
 </body>
 </html>

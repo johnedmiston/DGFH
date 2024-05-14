@@ -80,7 +80,7 @@ p{
     height:2680px;
 }
 .aboveband{
-    height:90px;
+    height:100px;
 }
 .margindiv{
     margin:20px 10px;
@@ -92,21 +92,14 @@ p{
 	text-align:center;
 	z-index: 200;
 }
-.d-logo{
-    width:100px;
-	height:100px;
-	background-color:rgba(255,0,0,1.00);
-}
 .header-t-row{
+    clear:both;
     position:absolute;
-    top:200px;
+    top:50px;
     left:0px;
     display:block;
     z-index:3000px;
     height:20px;
-}
-.header-t-row{
-    clear:both;
 }
 .header-text{
     padding:20px;
@@ -117,27 +110,17 @@ p{
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
     margin:30px 0px;
 }
-.book{
-    height:500px;
-    background-color:rgba(255,0,0,1.00);
-}
 .booktext p{
     text-align:left;
 }
 /*mobile navigation*/
 .logo{
     width:100%;
-    font-size:3.0em;
+    font-size:0.7em;
 }
 .logo-m{
     float:left;
-    width:75%
-}
-.icon{
-    float:right;
-    width:100px;
-    height:100px;
-    background-color:red;  
+    width:75%;
 }
 .image-jumbo{
     width:100%;
@@ -147,7 +130,6 @@ p{
 .m-header{
     position: relative;
     width: 100%;
-    background-color:rgba(160,221,136,0.60);
     padding:0px;
 } 
 /* Nav menu */
@@ -174,27 +156,27 @@ p{
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-    display: none;
-    position:absolute;
-    top:100px;
-    right:0px;
-    z-index: 300;
-    width:100%;    
+.hamb{
+    float:right;
+    width:50px;
+    height:50px;
 }
 .menu-item{
     float:left;
     width:45%;
+    height:50px;
     margin:0px 10px;
-    padding:10px;
+    padding:00px;
     font-size:0.90em;
     border-radius:10px;
     background-color:rgba(27,91,126,0.60);
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
     
 }
-.menu-item a{
-    display:block;
+.menu-item a h3{
+    margin:0px;
+    padding:13px;
+    width:100%;
     height:100%;
 }
 
@@ -203,49 +185,77 @@ p{
     box-shadow:0px 0px 10px 10px rgba(255,203,0,1.00);
     
 }
-.menu-item a:hover{
+.menu-item a h3:hover{
     color:rgba(0,26,255,1.00);
 }
 /* Style navigation menu links */
-.topnav #myLinks a {
-    margin:20px;
-    color: black;
+#myLinks{
+    display:none;
+    position:absolute;
+    top:50px;
+    right:0px;
+    z-index: 300;
+    width:100%;   
+}
+.m-item{
+    clear:both;
+    float:left;
+    width:100%;
+    text-align:center;
+    margin:20px 0px 0px 0px;
+    color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    display: block;
-}
-.topnav #myLinks a h3{
-    margin:0px;
+    width:100%;
 }
 /* Style the hamburger menu */
-.topnav #myLinks a{
+.topnav .m-item{
     background-color:rgba(27,91,126,0.60);
     color:rgba(255,255,255,1.00);
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
 }
 /* Add a grey background color on mouse-over */
-.topnav .mylinks a:hover {
-    background-color: #ddd;
-    color: black;
-}
 .phone{
     display:none;
+}
+.small{
+    display:block;
+}
+@media only screen and (min-width:460px){
+    .logo{
+        font-size:1.1em;
+    }
+}
+@media only screen and (min-width:640px){
+    .logo{
+        font-size:1.2em;
+    }
+    .phone{
+        display:block;
+    }
+    .small{
+        display:none;
+    }
 }
 @media only screen and (min-width:720px){
     .d-header{
         display:block;
         height:2000px;
     }
+    .header-t-row{
+        top:200px;
+    }
     .phone{
         display:block;
     }
     .menu-item{
-        font-size:1.0em;
+        font-size:0.7em;
         width:45%;
     }
-    .d-logo{
+    .logo{
         display:block;
+        font-size:2.5em;
     }
     .m-header{
         display:none;
@@ -253,13 +263,13 @@ p{
 }
 @media only screen and (min-width:870px){
    .tab{
-        display:block;
-    }
-    .phone{
         display:none;
     }
+    .phone{
+        display:block;
+    }
     .menu-item{
-        font-size:1.3em;
+        font-size:0.9em;
         width:46%;
     }
 }
@@ -274,7 +284,7 @@ p{
         display:block;
     }
     .menu-item{
-        font-size:1.6em;
+        font-size:1.0em;
         width:47%;
     }
 }
@@ -296,16 +306,9 @@ p{
 .yellow h1{
     color:rgba(0,0,0,1.00);
 }
-.john-pic{
-    margin:auto;
-    text-align:center;
-    width:100%;
-    height:700px;
-    background-color:rgba(255,0,4,1.00);
-}
 .blue-overlap{
     position:absolute;
-    top:1420px;
+    top:1700px;
     left:0px;
     width:100%;
     height:1400px;
@@ -317,7 +320,7 @@ p{
     text-align:center;
 }
 .button{
-    padding:10px;
+    padding:0px;
     height:100px;
     text-align:center;
     background-color:rgba(95,173,216,1.00);
@@ -329,6 +332,7 @@ p{
     color:rgba(0,26,255,1.00);
 }
 .button a h3{
+    padding:30px;
     display:block;
     width:100%;
     height:100%;
@@ -339,15 +343,15 @@ p{
 
 @media only screen and (min-width:460px){
     .blue-overlap{
-        top:1500px;
+        top:1750px;
     }
     .main{
         top:00px;
     }
 }
-@media only screen and (min-width:620px){
+@media only screen and (min-width:640px){
     .blue-overlap{
-        top:1500px;
+        top:1800px;
         height:1000px;
     }
     .main{
@@ -360,7 +364,7 @@ p{
         height:600px;
     }
     .blue-overlap{
-        top:1550px;
+        top:1650px;
         height:1000px;
     }
     .main{
@@ -379,6 +383,7 @@ p{
 @media only screen and (min-width:1050px){
     .blue-overlap{
         top:1900px;
+        height:1500px;
     }
     .main{
         top:00px;
@@ -389,7 +394,33 @@ p{
         top:100px;
     }
     .blue-overlap{
-        top:1000px;
+        top:1100px;
+        height:900px;
+    }
+    .john-pic{
+        width:275px;
+        height:275px;
+    }
+}
+@media only screen and (min-width:1700px){
+    .main{
+        top:100px;
+    }
+    .blue-overlap{
+        top:1200px;
+        height:900px;
+    }
+    .john-pic{
+        width:275px;
+        height:275px;
+    }
+}
+@media only screen and (min-width:1950px){
+    .main{
+        top:100px;
+    }
+    .blue-overlap{
+        top:1400px;
         height:900px;
     }
     .john-pic{
@@ -418,24 +449,29 @@ p{
         height:300px;
     }
 }
-@media only screen and (min-width:620px){
+@media only screen and (min-width:640px){
     .footer{
         top:900px;
     }
 }
 @media only screen and (min-width:720px){
     .footer{
-        top:900px;
+        top:1400px;
         height:200px;
     }
 }
 @media only screen and (min-width:870px){
     .footer{
-        top:900px;
+        top:1500px;
+    }
+}
+@media only screen and (min-width:1050px){
+    .footer{
+        top:1700px;
     }
 }
 @media only screen and (min-width:1200px){
     .footer{
-        top:1000px;
+        top:900px;
     }
 }
