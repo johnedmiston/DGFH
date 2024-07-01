@@ -69,6 +69,16 @@ h1{
     color:rgba(255,203,0,1.00);
     text-shadow: 3px 3px 10px rgba(0,0,0,1.00);
 }
+.booktext h3{
+    text-align: left;
+    color:rgba(255,203,0,1.00);
+    text-shadow: 3px 3px 10px rgba(0,0,0,1.00);
+}
+.button h3{
+    text-align: center;
+    color:rgba(255,255,255,1.00);
+    text-shadow: 3px 3px 10px rgba(0,0,0,1.00);
+}
 p{
     text-align:left;
     color:rgba(255,255,255,1.00);
@@ -76,8 +86,7 @@ p{
 }
 .d-header{
     position:relative;
-    display:none;
-    height:2680px;
+    display:block;
 }
 .aboveband{
     height:100px;
@@ -105,7 +114,7 @@ p{
     padding:20px;
     text-align:center;
     color:rgba(255,255,255,1.00);
-    z-offset:200;
+    z-index: 200;
     background-color:rgba(27,91,126,0.60);
     box-shadow:5px 5px 5px 5px rgba(10,10,10,0.60);
     margin:30px 0px;
@@ -126,8 +135,10 @@ p{
     width:100%;
     padding:0px;
     margin:0px;
+    
 }
 .m-header{
+    display:none;
     position: relative;
     width: 100%;
     padding:0px;
@@ -140,19 +151,24 @@ p{
     margin:0px 0px 40px 0px;
 }
 .tab{
-    display: none;
+    display:none;
 }
 .desk{
-    display: none;
+    display:none;
 }
 
 /* Style the navigation menu */
 .topnav {
+    display:block;
     position:absolute;
     top:0px;
     left:0px;
     margin:10px;
     width:97%;
+}
+.topnav .icon{
+    display:block;
+    cursor: pointer;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -222,9 +238,24 @@ p{
 .small{
     display:block;
 }
-@media only screen and (min-width:460px){
+@media only screen and (min-width: 0px){
     .logo{
-        font-size:1.1em;
+        font-size: 1.1em;
+    }
+    .phone{
+        display:none;
+    }
+    .small{
+        display:block;
+    }
+    .d-header{
+        display:none;
+    }
+    .m-header{
+        display:block;
+    }
+    .topnav{
+        display:block;
     }
 }
 @media only screen and (min-width:640px){
@@ -235,13 +266,22 @@ p{
         display:block;
     }
     .small{
+        display:block;
+    }
+    .main-nav{
         display:none;
+    }
+    .d-header{
+        display:none;
+    }
+    .m-header{
+        display:block;
     }
 }
 @media only screen and (min-width:720px){
-    .d-header{
+    .main-nav{
         display:block;
-        height:2000px;
+        height:000px;
     }
     .header-t-row{
         top:200px;
@@ -259,6 +299,9 @@ p{
     }
     .m-header{
         display:none;
+    }
+    .d-header{
+        display:block;
     }
 }
 @media only screen and (min-width:870px){
@@ -292,8 +335,11 @@ p{
 .about-john{
     padding:30px;
 }
+.contact-buttons{
+    margin: 50px 0px 0px 0px;
+}
 .main{
-   position:absolute;
+    position:absolute;
     top:00px;
     left:0px;
     width:100%;
@@ -341,7 +387,7 @@ p{
     color:rgba(0,26,255,1.00);
 }
 
-@media only screen and (min-width:460px){
+@media only screen and (min-width:0px){
     .blue-overlap{
         top:1750px;
     }
@@ -428,10 +474,30 @@ p{
         height:275px;
     }
 }
+@media only screen and (min-width:3050px){
+    .main{
+        top:100px;
+    }
+    .blue-overlap{
+        top:2500px;
+        height:1900px;
+    }
+    .john-pic{
+        width:275px;
+        height:275px;
+    }
+}
 .footer{
     position:absolute;
     top:1000px;
     left:0px;
+    width:100%;
+    text-align:center;
+    height:200px;
+    z-index: 1000px;
+}
+.footer-contact{
+    position:relative;
     width:100%;
     text-align:center;
     height:200px;
@@ -443,35 +509,111 @@ p{
 .padding p{
     color:rgba(0,0,0,1.00);
 }
-@media only screen and (min-width:460px){
+.trim {
+    max-height:1300px;
+    max-width: auto;
+    overflow: hidden;
+}
+@media only screen and (min-width:0px){
+    .footer-contact{
+        top:00px;
+        height:400px;
+    }
+    .trim {
+        max-height:100px;
+    }
+}
+@media only screen and (min-width:350px){
     .footer{
-        top:1100px;
+        top:1600px;
         height:300px;
+    }
+    .footer-contact{
+        top:00px;
+        height:300px;
+    }
+    .trim {
+        max-height:1300px;
     }
 }
 @media only screen and (min-width:640px){
     .footer{
-        top:900px;
+        top:1500px;
+        height:300px;
+    }
+    .footer-contact{
+        top:0px;
+        height:300px;
+    }
+    .trim {
+        max-height:1800px;
     }
 }
 @media only screen and (min-width:720px){
     .footer{
-        top:1400px;
+        top:1600px;
         height:200px;
+    }
+    .footer-contact{
+        top:0px;
+        height:200px;
+    }
+    .trim {
+        max-height:1800px;
     }
 }
 @media only screen and (min-width:870px){
     .footer{
-        top:1500px;
+        top:1700px;
+    }
+    .footer-contact{
+        top:0px;
+        
+    }
+    .trim {
+        max-height:2000px;
     }
 }
 @media only screen and (min-width:1050px){
     .footer{
-        top:1700px;
+        top:1800px;
+    }
+    .footer-contact{
+        top:0px;
+        
+    }
+    .trim {
+        max-height:2100px;
     }
 }
 @media only screen and (min-width:1200px){
     .footer{
-        top:900px;
+        top:1100px;
+    }
+    .footer-contact{
+        top:0px;
+    }
+    .trim {
+        max-height:1300px;
+    }
+}
+@media only screen and (min-width:2500px){
+    .footer{
+        top:1900px;
+    }
+    .footer-contact{
+        top:0px;
+    }
+    .trim {
+        max-height:1500px;
+    }
+    p{
+        font-size: 2.0em;
+    }
+    h3{
+        font-size: 2.0em;
+    }
+    m-item{
+        height:400px;
     }
 }
