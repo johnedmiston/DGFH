@@ -52,6 +52,23 @@ Check-03:
 		-fixed responsiveness for super HD displays
 		-fixed hamb to move the jumbotron out of the way
 		-fixed mobile nav formatting to reflect changes
+Check-04:
+	-fix TEL link
+	-serif for title
+	-fix for phone
+	-fix the blue overlap height
+	-fix the footer in about
+	-Logo needs to link to the homepage
+	-create a fourth page with chapters
+	-video at the top
+	-about the book text to the left under video
+	-links to the right of the text about book
+	links:
+		-amazon link
+		-link to chapters
+	Missed:
+		-fix font size for text and logo
+		-fix logo overlap on mobile nav
 
 	
 
