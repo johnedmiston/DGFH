@@ -68,7 +68,7 @@ Check-04:
 		-link to chapters
 	Missed:
 		-fix font size for text and logo
-		-fix logo overlap on mobile nav
+		-fix logo overlap on mobile navCheck
 
 	
 
