@@ -69,6 +69,8 @@ Check-04:
 	Missed:
 		-fix font size for text and logo
 		-fix logo overlap on mobile navCheck
+Check-05:
+	-server testing done! No changes desired.
 
 	
 
