@@ -71,6 +71,10 @@ Check-04:
 		-fix logo overlap on mobile navCheck
 Check-05:
 	-server testing done! No changes desired.
-
+Check-06
+	-fixed typos
+	​-fixed contact john link, was showing code to open in a new tab, now it should open in the same tab
+	​-went ahead and added a bold horizontal rule to seperate qualifications and lectureships. Let me know if you want something different.
+	​-the header nav shows those two links for simplicity. The logo text can be clicked to navigate back to the home screen. The book page is not a part of the navigation, as the chapters indicate the content in the book, having the chapter page off the nav would help with the site's ease-of-use. Let me know if you want it up there anyway.
 	
 

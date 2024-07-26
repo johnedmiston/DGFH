@@ -160,6 +160,13 @@ li {
     margin: 31px, 0px;
 }
 
+hr {
+    color: rgba(255, 203, 0, 1.00);
+    height: 15px;
+    background-color: rgba(255, 203, 0, 1.00);
+    margin: 50px 0px;
+}
+
 .booktext h3 {
     text-align: left;
     color: rgba(255, 203, 0, 1.00);
