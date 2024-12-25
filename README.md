@@ -1,37 +1,13 @@
-----Email from John-----
+# [Downloading Grace From Heaven]
 
-Alex and Olivia,
+downloadinggrace.com primarily promotes the book "Downloading Grace From Heaven" by John Edmiston. The advertising focuses on the key themes and teachings of the book, which aims to help readers understand and experience God's grace in their lives.
 
-It is an honor to know both of you and to have you working on this project!
+The book emphasizes how grace flows into individuals through faith, highlighting the transformative power of God's Spirit. It teaches that receiving heavenly grace can lead to a more obedient Christian life and enrich one's personality with divine qualities such as love, joy, and peace.
+Learning and Growth: The promotional content encourages readers to "download" God's grace into their hearts, minds, souls, and spirits, suggesting a process of spiritual growth and deeper connection with Christian teachings.
+Accessibility: The site likely provides options for purchasing the book in various formats, including Kindle and physical copies, making it accessible to a wide audience.
 
-Alex will do the coding, Olivia will do web design and copywriting. Emails are below.
+In summary, DownloadingGrace.com effectively promotes "Downloading Grace From Heaven" by John Edmiston by highlighting its teachings on grace, spiritual growth, and the benefits of living a life filled with God's love and guidance.
 
-************************************** (censored)
-************************************** (censored)
+for more information about how the site came to be, read "/docs/"
 
-The project is a complete redesign of https://downloadinggrace.com
-
-It should become:
-
-1. Responsive
-2. Attractive
-3. Fast-loading
-4. Well written with a clear message. You can use either British spelling (**********) or USA spelling.
-5. Images should be Creative Commons, please do not use any images that might be copyright protected.
-6. Please do NOT use Wordpress, please code it in html, css, javascript etc. Use Dreamweaver or similar coding tools.
-7. Try to SEO optimize head tags and the text on the web page with key-words such as grace, Christian, books, etc
-
-I have invited you to a Github repository: https://github.com/johnedmiston/DGFH/
-
-This is where you will store the code. If you need a test server we can arrange that as well, once you need it.
-
-There is no rush. I understand life, exams etc. ****************************(censored)
-
-Blessings,
-
-John
-
-***********************************************
-
-----Alex's 2 cents----
-Olivia will be doing the content, and because of Olivia's workload, I will be doing the design work and the coding. I have a project for school I have as well, 16-19 pages long.
+for legal information about the repo and all the files on and off the repo, read "/legal-docs/"
