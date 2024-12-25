@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'angltrr';
+	src: local('angltrr'), url('./angltrr.woff') format('woff');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_483">Text with this font applied</p> */
+.fontsforweb_fontid_483 {
+	font-family: 'angltrr' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#player{
+    width:100%;
+    margin-top: var(--gridwidth);
+    height:50.7vw;
+    max-height:607px;
+}
+
+:root{
+    --plyr-color-main: #ed7a0a;
+    --plyr-video-controls-background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+    --plyr-video-control-color:#f6ecdc;
+    --plyr-menu-background:#f6ecdc;
+    --plyr-font-family: "espresso-dolce", sans-serif;
+    --sb-category-preview-chooseACategory: #f6ecdc;
+}
+button.plyr_control{
+    height:auto;
+}
