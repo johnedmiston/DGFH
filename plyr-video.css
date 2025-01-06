@@ -4,9 +4,9 @@
 
 #player{
     width:100%;
+    max-width:1080px;
     margin-top: var(--gridwidth);
-    height:50.7vw;
-    max-height:607px;
+    height:auto;
 }
 
 :root{

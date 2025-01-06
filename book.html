@@ -2,92 +2,117 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Downloading Grace from Heaven - Home</title>
+		<title>Downloading Grace from Heaven - About the Book</title>
 		<script src="https://kit.fontawesome.com/9fd593a936.js" crossorigin="anonymous"></script>
 		<link href="dgfh.css" rel="stylesheet" type="text/css">
-		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+		<link rel="icon" type="img/png" href="images/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
-		name="description"
-		content="Web site created using create-react-app"
+		name="Downloading Grace from Heaven"
+		content="Welcome to downloadinggrace.com, the official website for the book Downloading Grace from Heaven by John Edmiston."
 		/>
-		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-		<!--
-		manifest.json provides metadata used when your web app is installed on a
-		user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-		-->
-		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-		<!--
-		Notice the use of %PUBLIC_URL% in the tags above.
-		It will be replaced with the URL of the `public` folder during the build.
-		Only files inside the `public` folder can be referenced from the HTML.
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-		work correctly both with client-side routing and a non-root public URL.
-		Learn how to configure a non-root public URL by running `npm run build`.
-		-->
-		<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    	<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	</head>
 	<body>
-		<div class="wrapper index">
-			<div class="d-logo index">
-				<img src="images/logo/logo.svg" alt="Downloading Grace from Heaven logo">
+		<div class="wrapper book">
+			<div class="d-logo book">
+				<a href="index.html"><img src="images/logo/logo.svg" alt="Downloading Grace from Heaven logo"></a>
 			</div>
-			<div class="navbar index">
-				<div class="nav index">
-					<div class="logo index">
-						<img src="images/logo/logo.svg" alt="Downloading Grace from Heaven logo">
+			<div class="navbar book">
+				<div class="nav book">
+					<div class="logo book">
+						<a href="index.html"><img src="images/logo/logo.svg" alt="Downloading Grace from Heaven logo"></a>
 					</div>
-					<ul class="listitems index">
-						<li class="links index"><a href="author.html">About the Author</a></li>
-						<li class="links index"><a href="book.html">About the Book</a></li>
-						<li class="links index"><a href="https://shorturl.at/g6UHr">Buy the Book</a></li>
+					<ul class="listitems book">
+						<li class="links book"><a href="author.html">About the Author</a></li>
+						<li class="links active book"><a href="book.html">About the Book</a></li>
+						<li class="links book"><a href="https://shorturl.at/g6UHr">Buy the Book</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="main index">
-				<div id="root"></div>
-				<div class="about-book-home index">
-					<div class="text-group index">
+			<div class="main book">
+				<div class="container">
+					<ul class="img-container" id="slider">
+						<li class="slide">
+							<img src="images/mockups/pexels-antonio-cuellar-4366062.jpg" alt="replace photo">
+						</li>
+						<li class="slide">
+							<img src="images/mockups/pexels-asad-photo-maldives-9470498.jpg" alt="replace photo">
+						</li>
+						<li class="slide">
+							<img src="images/mockups/pexels-asad-photo-maldives-9482128.jpg" alt="replace photo">
+						</li>
+					</ul>
+					<a href="#" id="prev"><i class="fa-solid fa-circle-chevron-left"></i></a>
+					<a href="#" id="next"><i class="fa-solid fa-circle-chevron-right"></i></a>
+				</div>
+				<script src="slider.js"></script>
+				<div class="midground mg1 book">
+					<div class="text-group tg1 book">
 						<h1>About The Book</h1>
 						<p>Downloading Grace from Heaven will give you the missing piece in your Christian life – God’s grace! The entire spiritual dimension of life is free. It is received not earned. It is given and not paid for! Spiritual things such as love, joy and peace come to us by believing and receiving. DGFH will show you how this works. You will learn how to have instant self-control, instant joy and how to obtain wisdom from God. Just by believing and receiving the grace of God into your inner being through faith. This book will make the Bible come alive to you as the promises of Jesus Christ become your keys to Christian living.</p>
 					</div>
-					<div class="button-group bg1 index">
-						<a href="https://shorturl.at/g6UHr"><div class="button">Buy Book Now on Amazon</div></a>
-						<a href="book.html"><div class="button">More About the Book</div></a>
-					</div>
 				</div>
-				<div class="about-author-home index">
-					<div class="text-group index">
-						<h1>About the Author</h1>
-                        <p>John Edmiston leads a digital non-profit called Cybermissions which provides free and
-                        low-cost theological education to those most in need. He has lived in Australia, Nauru,
-                        Papua New Guinea, the Philippines and the USA and has led churches, taught in seminaries and led various Christian outreach organizations during his 40 years in ministry. John now lives in Virginia with his wife Minda.</p>
-						<div class="button-group bg2 index">
-							<a href="about.html"><div class="button">Read More About John</div></a>
-						</div>
-					</div>
-					<div class="midground index">
-						<img src="images/johned_academic.png" alt="Author John Edmiston in front of a bookshelf">
-						<h1>John Edmiston</h1>
-					</div>
-				</div>
-				<div class="about-bible-study-home index">
-					<div class="text-group index">
-						<h1>Bible Study Groups Discount</h1>
-                    	<p>We will give a 25% discount for bulk orders (above 25 books) since I can send you a box of author copies from Amazon. If you want the discount do NOT buy directly from Amazon, contact me by email at digitalopportunities@gmail.com with the subject “Author Discount DGFH” and your address.</p>
-					</div>
-					<div class="button-group bg3 index">
-						<a href="contact.html"><div class="button">Contact John</div></a>
-					</div>
+				<div class="text-group tg2 book">
+					<h1>Chapters of the Book</h1>
+					<ol class="book">
+						<li>
+							<h3>God’s Mysterious Grace</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>The Kingdom of Heaven Is At Hand</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>From Spiritual Defeat To Spiritual Victory</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>The Grace of the Lord Jesus Christ Be With Your Spirit</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>Grace and Works</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>Praying For Grace</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>Believing That You Will Receive Grace From Heaven</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>Receiving and Experiencing Grace From Heaven</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>Continuing In Heavenly Grace</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>The Stewardship of Grace</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>Walking In The Grace That You Have Received</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+						<li>
+							<h3>The Prayer of Jesus</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</li>
+					</ol>
 				</div>
 			</div>
-			<div class="footer index">
-				<div class="footer-div index">
-					<div class="index" id="copy">ERROR 1</div><!--copyright-->
-					<div class="legal index">
+			<div class="footer book">
+				<div class="footer-div book">
+					<div class="book" id="copy">ERROR 1</div><!--copyright-->
+					<div class="legal-div book">
 						<a href="legal.html"><div class="button">Legal, Policies, and Attributions</div></a>
 					</div>
 					<script src="copyright.js"></script>
@@ -98,6 +123,5 @@
 		<script>
 			const player = new Plyr('#player');
 		</script>
-		<script src="../src/index.js"></script>
 	</body>
 </html>
