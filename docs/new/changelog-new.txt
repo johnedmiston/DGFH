@@ -1,0 +1,122 @@
+DGFH-
+	Discuss issues with copyright and formatting
+	Use a wrapper and a jumbotron
+	Change color Scheme to be more cohesive with the book
+	
+	x"John Has" needs to have bigger text
+	
+	Logo:
+	-Update logo with proper colors from figma
+	
+	Possible misspelling: about: "Calvary Chapel South Bay Bible Colleged"
+	
+	Meeting 1:
+	Likes the cream background
+	Likes shadows but subtle
+	Sans-serif for the header
+	Angleterre Book font for the paragraph text
+	Use "Downloading" orange, ignore "From" orange.
+	Use the blue for the buttons
+	Generate christian/nature imagery with you.com
+	Have the headline on the cover be above the fold.
+	
+	Meeting 2:
+	Before:
+		Discuss Apache License
+		-Discuss adding new account to the GitHub
+		-Discuss Figma sketches for nav
+	During:
+		-Purchase the book in the navigation
+		-Espresso Dolce for headers and buttons
+		-4 color scheme
+		-9 wrap-around
+		-No shadows on the logo
+		-Shadows 2px 2px 10px 0.25
+		-12, no white background
+		-15 mobile nav, no hamburger menu3
+		-Angleterre Book for the paragraph text
+		-16 font for paragraph text
+		-20 font for espresso dolce
+	After:
+		-Merged "contact" and "about author"
+		-Added custom plugin for video
+		-Talk about border radiuses
+		Talk about the Legal policies and attributions
+		Converted the site to react js
+		
+	notes:
+		-Make active selector in css
+		-implement closer gridwidth
+		-Get vw out of widths
+		Add website icon to the navbar?
+		Add font awesome icons on lists
+		Learn and implement favicons
+		*Don't be afraid to show white space with these new svg icons
+		
+	Meeting 2:
+		Before:
+			-Talk about favicons
+			-Talk about font awesome icons
+			-Talk about video plugin
+			-Talk about border radiuses
+			Talk about the Legal policies and attributions
+			Should I Convert the site to React JS?
+			information is missing email
+			Go over image slider
+		During:
+			-Target blank on 2nd buy book link, index.html
+			Wants a favicon
+			Likes custom plugin for video
+			Wants fontawesome
+			Want border radius
+			Pick up development on Friday the 3rd, the holiday is considered time-off.
+		After:
+			-Fix image slider on book
+			-Make legal.html and have it be tab buttons
+			-Add website icon to the navbar
+			xAdd font awesome icons on lists
+			-Learn and implement favicons
+			-Replace photos in book.html with mockups
+			
+	Meeting 3:
+		Before:
+			-Merged "contact" and "about author"
+			-Talk about React JS and how it is unnecessary
+			-Missing information email
+			-Go over image slider
+			-Talk about the Legal policies and attributions
+			-Talk about legal.html navigation system
+		During:
+			Fix hand on the left, bible study groups discount
+			Buy book Target Blank on all pages
+			0.5 in thick for the book
+			Chop off google voice
+			Make font size bigger
+			Chop out lorem ipsum on lectureships
+			Remove Azusa
+			Cityvision is in Kansas City, Misouri
+			Send email with book chapter summaries and book cover
+		After:
+			-Fix hand on the left, bible study groups discount
+			-Buy book Target Blank on all pages
+			-Chop off google voice
+			-Make font size bigger
+			-Chop out lorem ipsum on lectureships
+			-Remove Azusa
+			-Cityvision is in Kansas City, Misouri
+			-Send email with book chapter summaries and book cover
+			-Get mockup psd files together for the book
+			-Contact.html needs to be author.html in index
+			-about.html needs to be author.html in index
+			-Make legal nav responsive - rebuild the entire javascript
+			-Upload Apache 2.0 license to ODBA.com and reference it in the HTML
+	Meeting 4:
+		Before:
+			Talk about chapter summaries
+			Talk about illustrator jobs
+			Talk about contact information
+			Talk about font size
+			Talk about lectureships
+			Talk about mockups, added 3 and 4 to the beginning of the slider
+			Talk about legal nav
+Talk about long-term legal

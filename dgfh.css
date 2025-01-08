@@ -402,14 +402,25 @@ li.links.active a{
 .text-group.author{
     width:100%;
 }
+.text-group.contact-author.author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .text-group.author h1{
     margin:var(--gridwidth) 0 var(--closewidth) 0;
+}
+.text-group-subtext.author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:405px;
 }
 .sub-text{
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 0 var(--closewidth) var(--gridwidth);
+    margin: 0 0 var(--closewidth) 0;
 }
 .sub-text h3{
     margin-right:var(--gridwidth);
