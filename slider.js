@@ -27,6 +27,9 @@ document.getElementById('next').addEventListener('click', function(event){
     if(cursor < slideCount - 1){
         moveSlides('forward');
         cursor++;
+    } else {
+        moveSlides('go to beginning');
+        cursor = 0;
     };
 });
 document.getElementById('prev').addEventListener('click', function(event){
@@ -35,6 +38,9 @@ document.getElementById('prev').addEventListener('click', function(event){
     if(cursor > 0){
         moveSlides('backward');
         cursor--;
+    } else {
+        moveSlides('go to end');
+        cursor = slideCount - 1;
     };
 });
 
@@ -55,24 +61,38 @@ window.addEventListener('resize', function(){
 calculateTallestSlide();
 });
 
-//Calculates the positioning of slides when they will be moving
-function moveSlides(direction){
-    for (var i = 0; i < slides.length; i++){
-        if(direction == 'backward'){
-            slides[i].style.left = +slides[i].style.left.replace(/[^-\d\.]/g, '') + slideWidth + 'px';
-        } else if (direction == 'forward'){
-            slides[i].style.left = +slides[i].style.left.replace(/[^-\d\.]/g, '') - slideWidth + 'px';
+// Calculates the positioning of slides when they will be moving
+function moveSlides(direction) {
+    for (var i = 0; i < slides.length; i++) {
+        if (direction === 'backward') {
+            slides[i].style.left = (+slides[i].style.left.replace(/[^-\d\.]/g, '') + slideWidth) + 'px';
+        } else if (direction === 'forward') {
+            slides[i].style.left = (+slides[i].style.left.replace(/[^-\d\.]/g, '') - slideWidth) + 'px';
+        } else if (direction === 'go to beginning') {
+            slides[i].style.left = (i * slideWidth) + 'px'; // Reset to original positions
+        } else if (direction === 'go to end') {
+            slides[i].style.left = ((i - (slideCount - 1)) * slideWidth) + 'px'; // Move to end positions
         };
     };
 };
-
 //Function calculating the height of the tallest slide
-function calculateTallestSlide(){
+/*function calculateTallestSlide(){
+
     for (var i = 0; i < slideCount; i++){
         if (slides[i].offsetWidth > topHeight){
             topHeight = slides[i].offsetHeight;
         };
     };
-
     slider.style.height = topHeight + 'px';
-};
+};*/
+
+// Function calculating the height of the tallest slide
+function calculateTallestSlide() {
+    topHeight = 0; // Reset topHeight before calculation
+    for (var i = 0; i < slideCount; i++) {
+        if (slides[i].offsetHeight > topHeight) {
+            topHeight = slides[i].offsetHeight;
+        }
+    }
+    slider.style.height = topHeight + 'px';
+}
