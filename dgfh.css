@@ -132,9 +132,6 @@ a{
 .navbar{
     background-color: var(--midground);
     box-shadow: var(--boxShadow);
-    display: flex;
-    flex-direction: column;
-    
 }
 .nav{
     padding:var(--gridwidth);
@@ -162,9 +159,6 @@ a{
     max-width: var(--wrapWidth);
     width:100%;
     list-style: none;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 175px;
     max-height:350px;
 }
@@ -172,6 +166,7 @@ li.links{
     display:flex;
     justify-content: center;
     align-items:center;
+    margin-bottom: var(--closewidth);
 }
 li.links a, .button a{
     font-size: var(--h1Size);
@@ -203,9 +198,11 @@ li.links.active a{
         display:none;
     }
     .listitems{
+        display:flex;
         flex-direction: row;
         height:auto;
         justify-content: space-around;
+        margin:0;
     }
     li.links{
         width: 25vw;
@@ -334,6 +331,9 @@ li.links.active a{
         width:25vw;
         max-width:470px;
     }
+    .text-group.tg2.index{
+        margin:0;
+    }
 }
 
 /*about bible study home*/
@@ -382,11 +382,15 @@ li.links.active a{
     #copy{
         text-align:left;
     }
+    .legal-div a .button{
+        width:300px;
+        padding:10px;
+    }
 }
 /*contact author*/
 .contact-author{
     display: flex;
-    margin: var(--gridwidth) 0;
+    margin: var(--gridwidth) 0 var(--closewidth) 0;
     flex-direction: column;
     align-items: center;
 
@@ -406,6 +410,7 @@ li.links.active a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:0;
 }
 .text-group.author h1{
     margin:var(--gridwidth) 0 var(--closewidth) 0;
@@ -431,11 +436,11 @@ li.links.active a{
 }
 .bg1.author{
     width:100%;
-    height:100px;
     margin:0 0 var(--gridwidth) 0;
 }
 .bg1.author a{
     width:90vw;
+    margin-bottom: var(--closewidth);
 }
 @media screen and (orientation:landscape){
     .contact-author{
@@ -455,10 +460,11 @@ li.links.active a{
         max-width: 520px;
     }
     .sub-text h3{
-        width:200px
+        width:80px;
+        text-align: left;
     }
     .sub-text p{
-        width:200px;
+        width:300px;
     }
 }
 /*about author*/
@@ -526,7 +532,10 @@ hr{
         margin:0;
     }
     .text-group.studies.author, .text-group.lecture.author{
-        margin-left:var(--closewidth);
+        margin: 0 0 0 var(--closewidth);
+    }
+    .text-group.about.lecture.author{
+        margin-bottom: var(--gridwidth);
     }
     .text-group.studies.author h3, .text-group.lecture.author h3{
         text-align:left;
@@ -645,16 +654,11 @@ a .button.legal{
 }
 .button-nav.legal a{
     height:100%;
-    /*border-bottom: 5px solid var(--active);*/
     border-radius: var(--borderRadius);
 }
 .button-nav.legal a.active .button.legal{
     background-color: var(--active);
     color: var(--background);
-    /*border-bottom: none;
-    border-left: 5px solid var(--active);
-    border-right: 5px solid var(--active);
-    border-top: 5px solid var(--active);*/
 }
 a.b4.bn1.active .button.legal{
     border-width: 0px 15px;
