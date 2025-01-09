@@ -262,7 +262,7 @@ li.links.active a{
 }
 .button-group.bg1.index{
     margin-top:var(--closewidth);
-    height:100px;
+    height:110px;
 }
 .button-group a{
     width:100%;
@@ -287,7 +287,7 @@ li.links.active a{
 @media screen and (min-width:545px){
     .button{
         width:100%;
-        max-width:300px;
+        max-width:240px;
     }
     .button-group{
         flex-direction: row;
@@ -298,6 +298,7 @@ li.links.active a{
     }
     .button-group.bg1.index{
         height:auto;
+        
     }
 } 
 /*about author home*/
