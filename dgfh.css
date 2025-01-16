@@ -117,6 +117,7 @@ a{
     font-style: normal;
     text-decoration: none;
     color:var(--background);
+    width:100%;
 }
 .wrapper{
     background-color: var(--background);
