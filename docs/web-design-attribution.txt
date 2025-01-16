@@ -1,0 +1,11 @@
+The website was designed and coded using Figma and Visual Studio Code by web designer Alexander Weinhart.
+Web design by (c)2024-current Alexander Weinhart.
+please copy and paste this entire text document as a way to thank Alexander for his design and code work if you wish to use this github's code. But it's not a legal requirement.
+
+please check out Alexander's freelancing website:
+https://onlinedesignsbyalex.com
+
+and if you're feeling generous, please buy Alex a college sketchpad using the link below.
+Alexander will be a web design major at a college until 2028. All money donated will go towards his education.
+After 2028, if you'd still like to donate, Buy Alex a coffee using the same link below:
+https://buymeacoffee.com/onlinedesignsbyalex
