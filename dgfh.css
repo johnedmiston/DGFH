@@ -152,7 +152,11 @@ a{
     padding: 0 0 var(--gridwidth) 0;
 }
 .d-logo{
-    max-width:400px;
+    max-width: 400px;
+    height:140.51px;
+}
+.logo a{
+    height:71.04px;
 }
 .listitems{
     border-radius: var(--borderRadius);
@@ -160,7 +164,6 @@ a{
     max-width: var(--wrapWidth);
     width:100%;
     list-style: none;
-    height: 175px;
     max-height:350px;
 }
 li.links{
