@@ -15,10 +15,26 @@ if (slideCount > 0){
 for (var i = 0; i < slideCount; i++){
     slides[i].style.left = slideWidth * i + 'px';
 };
+// Function to initialize the slider
+function initializeSlider() {
+    calculateTallestSlide();
+}
 
-//Function calling a calculation that calculates the height of the tallest slide
-calculateTallestSlide();
+// Attach load event to each image
+var images = document.querySelectorAll('.slide img');
+var imagesLoaded = 0;
 
+images.forEach(function(image) {
+    image.addEventListener('load', function() {
+        imagesLoaded++;
+        if (imagesLoaded === images.length) {
+            initializeSlider();
+        }
+    });
+});
+
+// Call initializeSlider on window load as a fallback
+window.addEventListener('load', initializeSlider);
 
 //Button Event Listeners Go Here
 document.getElementById('next').addEventListener('click', function(event){
@@ -75,16 +91,6 @@ function moveSlides(direction) {
         };
     };
 };
-//Function calculating the height of the tallest slide
-/*function calculateTallestSlide(){
-
-    for (var i = 0; i < slideCount; i++){
-        if (slides[i].offsetWidth > topHeight){
-            topHeight = slides[i].offsetHeight;
-        };
-    };
-    slider.style.height = topHeight + 'px';
-};*/
 
 // Function calculating the height of the tallest slide
 function calculateTallestSlide() {
